@@ -1,7 +1,15 @@
+header {
+    font-family: 'Berkshire Swash', cursive;
+}
+
 body {
-    background-color: gray;
+    background-color: #a8a4a4;
 }
 
 #btn-select {
     background-color: #015196;
+}
+
+.gray-border {
+    border: 1px solid #c5c1c1;
 }
