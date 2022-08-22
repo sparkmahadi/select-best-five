@@ -22,7 +22,9 @@ for (buttons of selectButton) {
         }
 
         const createLi = document.createElement('li');
-        createLi.classList.add = 'py-4';
+        console.log(createLi.classList);
+        createLi.classList.add('py-2');
+        console.log(createLi.classList)
         createLi.innerText = `${getPlayerName}`;
 
         selectedPlayers.appendChild(createLi);
