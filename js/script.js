@@ -8,12 +8,28 @@ function setInnerText(ValueToSet, elementId) {
         alert('Please give valid input')
     }
 }
+function intToRoman(number) {
+    if (number === 1) {
+        return 'I';
+    }
+    if (number === 2) {
+        return 'II';
+    }
+    if (number === 3) {
+        return 'III';
+    }
+    if (number === 4) {
+        return 'IV';
+    }
+    if (number === 5) {
+        return 'V';
+    }
+}
 // utilities end------------------------->
 
 const selectButton = document.getElementsByClassName('btn-select');
 const selectedPlayers = document.getElementById('players-list');
-for (let i = 0; i < selectButton.length; i++) {
-    const buttons = selectButton[i];
+for (buttons of selectButton) {
     buttons.addEventListener('click', function (event) {
         const getPlayerName = event.target.parentNode.children[0].innerText;
 
@@ -30,7 +46,7 @@ for (let i = 0; i < selectButton.length; i++) {
         event.target.setAttribute('disabled', true);
 
         const selectedPlayerNumber = document.getElementById('selected-player-number');
-        selectedPlayerNumber.innerText = i + 1;
+        selectedPlayerNumber.innerText = intToRoman(selectedPlayersLength + 1);
     })
 }
 
