@@ -1,3 +1,4 @@
+// utilites start------------------------>
 function setInnerText(ValueToSet, elementId) {
     if (ValueToSet === Number || ValueToSet > 0) {
         const element = document.getElementById(elementId);
@@ -7,11 +8,12 @@ function setInnerText(ValueToSet, elementId) {
         alert('Please give valid input')
     }
 }
-
+// utilities end------------------------->
 
 const selectButton = document.getElementsByClassName('btn-select');
 const selectedPlayers = document.getElementById('players-list');
-for (buttons of selectButton) {
+for (let i = 0; i < selectButton.length; i++) {
+    const buttons = selectButton[i];
     buttons.addEventListener('click', function (event) {
         const getPlayerName = event.target.parentNode.children[0].innerText;
 
@@ -20,36 +22,31 @@ for (buttons of selectButton) {
             alert('You Cannot Select More Than Five Players');
             return;
         }
-
         const createLi = document.createElement('li');
-        console.log(createLi.classList);
         createLi.classList.add('py-2');
-        console.log(createLi.classList)
         createLi.innerText = `${getPlayerName}`;
 
         selectedPlayers.appendChild(createLi);
         event.target.setAttribute('disabled', true);
 
+        const selectedPlayerNumber = document.getElementById('selected-player-number');
+        selectedPlayerNumber.innerText = i + 1;
     })
 }
 
-const CalculateButton = document.getElementById('btn-calculate');
-CalculateButton.addEventListener('click', function () {
+const calculateButton = document.getElementById('btn-calculate');
+calculateButton.addEventListener('click', function () {
     if (selectedPlayers.children.length < 5) {
-        alert('Please Select Five Players At Least')
+        alert('Please Select Five Players At Least!!!')
     }
     else {
-
         const budgetField = document.getElementById('budget-field');
         const budgetFieldValue = parseFloat(budgetField.value);
         const budgetPlayers = budgetFieldValue * 5;
-
         setInnerText(budgetPlayers, 'budget-display')
         budgetField.value = '';
     }
 })
-
-
 
 const calculateTotal = document.getElementById('btn-calculate-all');
 calculateTotal.addEventListener('click', function () {
@@ -68,6 +65,6 @@ calculateTotal.addEventListener('click', function () {
     else {
         alert('Please Calculate Player Expenses First!!!')
     }
+    managerField.value = '';
+    coachField.value = '';
 })
-
-

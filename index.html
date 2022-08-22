@@ -16,134 +16,182 @@
 
 <body text-center>
     <header>
-        <section class="d-md-flex bg-dark align-items-center pt-5">
+        <section class="d-md-flex bg-black align-items-center pt-4">
             <div>
-                <img src="images/hero-messi.png" class="img-fluid" alt="">
+                <img src="images/hero-messi-final.png" class="img-fluid w-100" alt="">
             </div>
-            <div class="text-info text-center">
-                <h1 class="fw-bold">Select Your Own Players</h1>
-                <p class="fs-4">Select five of your favourite players and estimate the cost of hiring and manage them.
+            <div class="text-center">
+                <h1 class="fw-bold header-styles">Select Your Own Players</h1>
+                <p class="fs-5 text-white">Select five of your favourite players and estimate the cost of hiring and
+                    manage them.
                 </p>
+            </div>
+            <div>
+                <img src="images/hero-right-side.png" class="w-100 img-fluid mx-auto" alt="">
             </div>
         </section>
     </header>
 
-    <main>
+    <main class="d-lg-flex container mt-5">
         <section class="container">
             <!-- first row -->
-            <div class="row">
-                <div class="col py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
+            <div class="row w-100 m-0">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
                         <img src="images/ronaldo.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Christiano Ronaldo</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">300 Goals | 450 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
                         <img src="images/ronaldinho.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Ronaldinho</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">250 Goals | 420 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
                         <img src="images/messi.jpg" class="img-fluid  rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Lionel Messi</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">300 Goals | 470 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col py-4">
-                    <div class="card rounded-0 bg-dark border-0 h-100 text-white py-4 px-2" style="width: 15rem;">
-                        <h5 class=" text-center d-block">SELECTED PLAYERS</h5>
-                        <ol class="mx-2" id="players-list">
-                        </ol>
-                    </div>
-                </div>
             </div>
-            </div>
+
             <!-- second row -->
-            <div class="row">
-                <div class="col px-2 py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
+            <div class="row w-100 m-0">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
                         <img src="images/neymar.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Neymar Jr</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">154 Goals | 176 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col px-2 py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
-                        <img src="images/salah.jpg" class="img-fluid  rounded-0" alt="...">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
+                        <img src="images/salah.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Mohammed Salah</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">146 Goals | 167 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col px-2 py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
-                        <img src="images/mbappe.jpg" class="img-fluid rounded-0" alt="...">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
+                        <img src="images/mbappe.jpg" class="img-fluid  rounded-0" alt="...">
                         <div class="card-body text-center text-white">
                             <h5 class="card-title fs-5 fw-bold">Kylian Mbappé</h5>
-                            <p class="card-text">36 Goals | 120 Assist</p>
+                            <p class="card-text">125 Goals | 154 Assist</p>
                             <button
                                 class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class="col px-2 py-4">
-                    <div class="card rounded-0 bg-dark gray-border" style="width: 15rem;">
+            </div>
+
+            <!-- third row -->
+            <div class="row w-100 m-0">
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
+                        <img src="images/ramos.png" class="img-fluid rounded-0" alt="...">
                         <div class="card-body text-center text-white">
-                            <h5 class="card-title fs-5 fw-bold">Budget</h5>
-                            <div class="d-flex justify-content-between align-items-center my-3">
-                                <p class="m-0">Per Player</p>
-                                <input class="w-50" type="text" name="budget" id="budget-field">
-                            </div>
-                            <a class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-semibold"
-                                id="btn-calculate">Calculate</a>
-                            <p class="mt-3">Player Expenses : $<span id="budget-display">00</span></p>
-                            <div class="d-flex justify-content-between align-items-center my-3">
-                                <p class="m-0">Manager</p>
-                                <input class="w-50" type="text" name="budget" id="manager-field">
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center my-3">
-                                <p class="m-0">Coach</p>
-                                <input class="w-50" type="text" name="budget" id="coach-field">
-                            </div>
-                            <a class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-semibold"
-                                id="btn-calculate-all">Calculate
-                                Total</a>
-                            <div class="d-flex justify-content-between my-3 fw-semibold">
-                                <p class="m-0">Total</p>
-                                <p class="m-0">$<span id="total-cost">00</span></p>
-                            </div>
+                            <h5 class="card-title fs-5 fw-bold">Sergio Ramos</h5>
+                            <p class="card-text">87 Goals | 99 Assist</p>
+                            <button
+                                class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
+                        <img src="images/mane.png" class="img-fluid rounded-0" alt="...">
+                        <div class="card-body text-center text-white">
+                            <h5 class="card-title fs-5 fw-bold">Sadio Mane</h5>
+                            <p class="card-text">107 Goals | 130 Assist</p>
+                            <button
+                                class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 py-4">
+                    <div class="card rounded-0 bg-dark gray-border w-100" style="width: 15rem;">
+                        <img src="images/dimaria.png" class="img-fluid  rounded-0" alt="...">
+                        <div class="card-body text-center text-white">
+                            <h5 class="card-title fs-5 fw-bold">Angel Di Maria</h5>
+                            <p class="card-text">150 Goals | 410 Assist</p>
+                            <button
+                                class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-bold btn-select">SELECT</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- aside section starts -->
+        <aside>
+            <div class="py-4 height-33">
+                <div class="card rounded-0 bg-dark border-0 h-100 w-100 text-white py-3 px-2" style="width: 15rem;">
+                    <h5 class=" text-center d-block">SELECTED PLAYERS(<span id="selected-player-number">0</span>)</h5>
+                    <ol class="mx-2" id="players-list">
+                    </ol>
+                </div>
+            </div>
+
+
+            <div class=" py-4">
+                <div class="card rounded-0 bg-dark border-0 gray-border w-100" style="width: 15rem;">
+                    <div class="card-body text-center text-white">
+                        <h5 class="card-title fs-5 fw-bold">Budget</h5>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <p class="m-0">Per Player</p>
+                            <input class="w-50" type="text" name="budget" id="budget-field">
+                        </div>
+                        <a class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-semibold"
+                            id="btn-calculate">Calculate</a>
+                        <p class="mt-3">Player Expenses : $<span id="budget-display">00</span></p>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <p class="m-0">Manager</p>
+                            <input class="w-50" type="text" name="budget" id="manager-field">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <p class="m-0">Coach</p>
+                            <input class="w-50" type="text" name="budget" id="coach-field">
+                        </div>
+                        <a class="btn btn-deepblue text-white w-100 p-1 rounded-0 fw-semibold"
+                            id="btn-calculate-all">Calculate
+                            Total</a>
+                        <div class="d-flex justify-content-between my-3 fw-semibold">
+                            <p class="m-0">Total</p>
+                            <p class="m-0">$<span id="total-cost">00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- aside section ends -->
     </main>
 
-    <footer class="mt-5 text-center text-white fw-semibold">
-        <p>Copyright @ 2022 All Rights Reserved.</p>
+    <footer class="mt-5 py-5 text-center text-white fw-semibold border-top border-2">
+        <p class="m-0">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
 
     <!-- js files -->
