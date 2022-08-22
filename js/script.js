@@ -52,16 +52,12 @@ for (buttons of selectButton) {
 
 const calculateButton = document.getElementById('btn-calculate');
 calculateButton.addEventListener('click', function () {
-    if (selectedPlayers.children.length < 5) {
-        alert('Please Select Five Players At Least!!!')
-    }
-    else {
-        const budgetField = document.getElementById('budget-field');
-        const budgetFieldValue = parseFloat(budgetField.value);
-        const budgetPlayers = budgetFieldValue * 5;
-        setInnerText(budgetPlayers, 'budget-display')
-        budgetField.value = '';
-    }
+    const budgetField = document.getElementById('budget-field');
+    const budgetFieldValue = parseFloat(budgetField.value);
+    const budgetPlayers = budgetFieldValue * selectedPlayers.children.length;
+    setInnerText(budgetPlayers, 'budget-display')
+    budgetField.value = '';
+
 })
 
 const calculateTotal = document.getElementById('btn-calculate-all');
@@ -75,7 +71,6 @@ calculateTotal.addEventListener('click', function () {
 
     if (budgetCost > 0) {
         const totalCost = managerCost + coachCost + budgetCost;
-        console.log(totalCost);
         setInnerText(totalCost, 'total-cost')
     }
     else {
