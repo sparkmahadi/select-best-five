@@ -4,6 +4,9 @@ function setInnerText(ValueToSet, elementId) {
         const element = document.getElementById(elementId);
         element.innerText = ValueToSet;
     }
+    else if(ValueToSet === 0){
+        alert('please select your players first')
+    }
     else {
         alert('Please give valid input')
     }
